@@ -134,8 +134,12 @@ ul.navbar-nav {
 
 /* about section */
 
+.row {
+  justify-content: space-between;
+}
+
 .about {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -144,6 +148,7 @@ ul.navbar-nav {
   justify-content: space-between;
   align-items: center;
   color: var(--secondary-orange);
+  /* margin: 8px; */
 }
 
 .about-paragraph-heading {
