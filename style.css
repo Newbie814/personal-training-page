@@ -46,9 +46,6 @@
   padding-bottom: 0;
 }
 
-.navbar-item {
-}
-
 .navbar-brand {
   margin-left: 10px;
   color: var(--secondary-app-color);
@@ -63,12 +60,13 @@ ul.navbar-nav {
 
 .nav-link {
   color: var(--secondary-app-color);
-  margin-left: 20px;
+  font-size: 1.3rem;
+  margin-left: 30px;
 }
 
 .nav-link:hover {
   color: #b7cece;
-  border-top: 1px solid #b7cece;
+  /* border-top: 1px solid #b7cece; */
 }
 
 .navbar-brand:hover {
@@ -76,6 +74,7 @@ ul.navbar-nav {
   cursor: pointer;
 }
 
+/* hero section */
 .hero-container {
   background-image: url('images/liam-dark.jpg');
   background-size: cover;
@@ -127,7 +126,39 @@ ul.navbar-nav {
 }
 
 .strong-be {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-style: italic;
   color: var(--primary-red);
+  padding: 0 4px;
+}
+
+/* about section */
+
+.about {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-columns {
+  height: 800px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-orange);
+}
+
+.about-paragraph-heading {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-body-text {
+  color: var(--primary-app-color);
+}
+
+h2 {
+  margin-bottom: 48px;
+}
+
+h3 {
+  margin-bottom: 48px;
 }
