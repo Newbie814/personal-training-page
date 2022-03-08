@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+:root {
+  --primary-app-color: #072448;
+  --secondary-app-color: #95d6d6;
+  --standout-color: #ffcb00;
+  --primary-red: #ff6150;
+  --secondary-orange: #f8aa4b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+#training {
+  font-family: 'Dancing Script';
+  color: white;
+}
+
+#training:hover {
+  color: var(--secondary-app-color);
+}
+
+#lastName:hover {
+  color: var(--primary-red);
+}
+.container-fluid {
+  background-color: #072448;
+  padding: 20px 30px;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.navbar-item {
+}
+
+.navbar-brand {
+  margin-left: 10px;
+  color: var(--secondary-app-color);
+  font-size: 2rem;
+}
+
+ul.navbar-nav {
+  margin-right: 50px;
+}
+.collapse {
+}
+
+.nav-link {
+  color: var(--secondary-app-color);
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #b7cece;
+  border-top: 1px solid #b7cece;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-red);
+  cursor: pointer;
+}
+
+.hero-container {
+  background-image: url('images/liam-dark.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.head-text {
+  padding-top: 350px;
+  padding-left: 125px;
+  font-weight: 900;
+}
+
+.header-box {
+  color: #b7cece;
+}
+
+.hero-header {
+  font-size: 7.2rem;
+  line-height: 0.95;
+}
+
+.hero-subhead {
+  font-size: 3rem;
+  color: white;
+  margin-top: 56px;
+  position: relative;
+}
+
+.fitness {
+  color: var(--secondary-app-color);
+}
+
+.nutrition {
+  color: white;
+}
+
+.improve {
+  padding: 0 8px;
+  font-family: 'Dancing Script';
+  color: var(--standout-color);
+}
+
+.not-be {
+  font-size: 2.5rem;
+  justify-self: end;
+  /* margin-top: 11px; */
+  position: absolute;
+  right: 500px;
+}
+
+.strong-be {
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--primary-red);
+}
