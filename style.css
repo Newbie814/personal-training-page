@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 :root {
-  --primary-app-color: #072448;
+  --primary-app-color: #02387a;
   --secondary-app-color: #95d6d6;
   --standout-color: #ffcb00;
   --primary-red: #ff6150;
@@ -43,7 +43,7 @@
   color: var(--primary-red);
 }
 .container-fluid {
-  background-color: #072448;
+  background-color: var(--primary-app-color);
   padding: 0 30px;
 }
 
@@ -147,15 +147,18 @@ ul.navbar-nav {
   border-radius: 40px;
   background-color: var(--primary-red);
   outline: none;
-  color: var(--primary-app-color);
+  color: white;
   margin: 20px auto;
   align-items: center;
+  border: none;
+  box-shadow: 0.5px 4px 1px 1px #ffffff3d;
 }
 
 .btn1:hover {
   cursor: pointer;
   background-color: #f84531;
-  color: white;
+  color: var(--primary-app-color);
+  box-shadow: 0.5px 4px 1px 1px #ffffff69;
 }
 
 /* .btn-container {
