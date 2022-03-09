@@ -329,3 +329,17 @@ h3 {
   margin-right: 16px;
   font-size: 24px;
 }
+
+.submit {
+  width: 300px;
+  border-radius: 25px;
+  background-color: var(--primary-red);
+  color: var(--primary-app-color);
+  box-shadow: 1.5px 3px 1px 1px #ffffff3d;
+}
+
+.submit:hover {
+  background-color: #f73823;
+  color: #fff;
+  cursor: pointer;
+}

@@ -29,6 +29,7 @@
                     .then(function() {
                         console.log('SUCCESS!')
                         alert("message has been sent");
+                        document.getElementById('contact-form').reset()
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
@@ -423,9 +424,7 @@
               <div class="card-body">
                 <h5 class="card-title">Virtual</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Freedom. Freedom from being beholden to a piece of equipment. Freedom from being beholden to an arbitrary paradigm. Freedom from emotional hang ups anchored to things that don’t matter or we can’t control. Freedom from scheduling restraints. Freedom to focus on what actually matters. Here, we know what that is: Life. And living it. 
                 </p>
               </div>
             </div>
@@ -706,6 +705,8 @@
                 </div>
               </fieldset>
             </form>
+
+            <!-- used this to establish functionality id emailjs first -->
               <!-- <form id="contact-form">
         <input type="hidden" name="contact_number">
         <label>Name</label>
