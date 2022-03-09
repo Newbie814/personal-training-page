@@ -283,6 +283,11 @@ h3 {
   cursor: pointer;
 }
 
+.service-card-text {
+  color: #0c2e58;
+  margin-top: 15px;
+}
+
 /* --------------------------------carousel-------------------------------------- */
 
 .carousel {
