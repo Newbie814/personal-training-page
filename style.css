@@ -34,12 +34,17 @@
   color: var(--secondary-app-color);
 }
 
+#lastName {
+  font-size: 3rem;
+  padding: 10px 0;
+}
+
 #lastName:hover {
   color: var(--primary-red);
 }
 .container-fluid {
   background-color: #072448;
-  padding: 20px 30px;
+  padding: 0 30px;
 }
 
 .navbar {
@@ -48,8 +53,8 @@
 
 .navbar-brand {
   margin-left: 10px;
+  font-size: 20rem;
   color: var(--secondary-app-color);
-  font-size: 2rem;
 }
 
 ul.navbar-nav {
@@ -60,12 +65,13 @@ ul.navbar-nav {
 
 .nav-link {
   color: var(--secondary-app-color);
-  font-size: 1.3rem;
-  margin-left: 30px;
+  font-size: 1.1rem;
+  margin: 0 12px;
 }
 
 .nav-link:hover {
-  color: #b7cece;
+  color: #bac9c9;
+  font-size: 1.35rem;
   /* border-top: 1px solid #b7cece; */
 }
 
@@ -122,7 +128,7 @@ ul.navbar-nav {
   /* margin-top: 11px; */
   color: white;
   letter-spacing: 1.5px;
-  padding-right: 56px;
+  padding-right: 11rem;
   padding-bottom: 22px;
 
   /* right: 500px; */
@@ -142,6 +148,8 @@ ul.navbar-nav {
   background-color: var(--primary-red);
   outline: none;
   color: var(--primary-app-color);
+  margin: 20px auto;
+  align-items: center;
 }
 
 .btn1:hover {
@@ -150,8 +158,59 @@ ul.navbar-nav {
   color: white;
 }
 
-.btn-container {
-  padding-right: 65px;
+/* .btn-container {
+  margin: 48px auto;
+} */
+
+/* --------------------------------about section experiment---------------- */
+
+.icon {
+  color: var(--primary-red);
+  height: 44px;
+}
+.intro-info {
+  margin: 250px auto 84px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-heading,
+/* .card-subheading, */
+.card-text {
+  color: #f73823;
+}
+
+/* .card-heading:hover,
+.card-subheading:hover,
+.card-text:hover,
+.about-card:hover {
+  color: var(--secondary-app-color);
+  background-color: var(--primary-app-color);
+} */
+
+.card-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-app-color);
+}
+
+.card-text {
+  font-size: 1.1rem;
+  padding-bottom: 22px;
+}
+
+/* .about-card:hover {
+  background-color: var(--primary-app-color);
+  border-radius: 10px;
+} */
+
+.card-heading {
+  margin-bottom: 38px;
+}
+
+.card-subheading {
+  margin-bottom: 28px;
 }
 
 /* about section */
@@ -182,10 +241,80 @@ ul.navbar-nav {
   color: var(--primary-app-color);
 }
 
-h2 {
-  margin-bottom: 48px;
-}
-
 h3 {
   margin-bottom: 48px;
+}
+/* ----------------------------section services---------------------------------- */
+.services-header {
+  color: var(--primary-app-color);
+  font-family: 'Dancing Script';
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+.services {
+  width: 70%;
+  margin: 200px auto;
+  /* background-color: var(--primary-app-color); */
+}
+
+.card-3,
+.card-4 {
+  margin-top: 64px;
+}
+
+.card-3,
+.card-4,
+.card-1,
+.card-2 {
+  box-shadow: 1px 9px 4px 0.1px #95d6d681;
+}
+
+.service-cards {
+  margin-bottom: 28px;
+  cursor: pointer;
+}
+
+/* --------------------------------carousel-------------------------------------- */
+
+.carousel {
+  width: 70%;
+  margin: 0 auto;
+  padding: 126px 0;
+}
+
+.testimonials {
+  /* background-color: var(--primary-app-color); */
+}
+
+/* {
+  color: #f73823;
+} */
+
+/* -------------------------------contact----------------------------------------- */
+.contact-section {
+  height: 250px;
+  background-color: var(--primary-app-color);
+}
+
+.input-group {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.input-group-text {
+  background-color: var(--primary-red);
+  color: white;
+
+  border: none;
+}
+
+.email-section {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: var(--primary-red);
 }
