@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 :root {
-  --primary-app-color: #02387a;
+  --primary-app-color: #0c2e58;
   --secondary-app-color: #95d6d6;
   --standout-color: #ffcb00;
   --primary-red: #ff6150;
@@ -331,7 +331,7 @@ h3 {
 }
 
 .submit {
-  width: 300px;
+  width: 250px;
   border-radius: 25px;
   background-color: var(--primary-red);
   color: var(--primary-app-color);
