@@ -38,7 +38,7 @@
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <!-- <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand branding" href="#"
           ><h2 id="lastName">Woodard <span id="training">Training</span></h2>
@@ -72,10 +72,33 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
+     <header>
+      <div id="brand" class="last-name"><a href="/"><span class="last-name">Woodard </span> <span id="training">Training</span></a></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#services-link">Services</a></li>
+          <li ><a href="#contact-link" >Contact</a></li>
+          
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+         <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#services-link">Services</a></li>
+          <li ><a href="#contact-link" >Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <section class="hero-container">
       <div class="row head-text">
-        <div class="col-lg-6 header-box">
+        <div class="col-lg-6 col-md-12 col-sm-12 header-box">
           <h1 class="hero-header">
             <span class="fitness">Fitness</span
             ><span class="nutrition"
@@ -88,7 +111,7 @@
           </h2>
         </div>
         <div
-          class="col-lg-6 header-box-right d-flex justify-content-end align-items-end contact-button"
+          class="col-lg-6 col-md-12 col-sm-12 header-box-right d-flex justify-content-end align-items-end contact-button"
         >
           <div class="flex">
             <p class="not-be">
@@ -420,7 +443,7 @@
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
               <div class="card-body">
                 <h5 class="service-card-title">Remote</h5>
                 <p class="service-card-text">
@@ -439,11 +462,11 @@
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
               <div class="card-body">
                 <h5 class="card-title">In-Person</h5>
                 <p class="service-card-text">
-                  A classic for a reason. 
+                  A classic for a reason. No explanation.
                 </p>
               </div>
             </div>
@@ -460,7 +483,7 @@
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
               <div class="card-body">
                 <h5 class="card-title">Hybrid</h5>
                 <p class="service-card-text">
@@ -479,7 +502,7 @@
                 alt="..."
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
               <div class="card-body">
                 <h5 class="card-title">Consultations</h5>
                 <p class="service-card-text">
@@ -570,7 +593,7 @@
             <form class="form-horizontal"  id="contact-form">
               <fieldset>
                 <!-- <label type="hidden" name="contact_number"></label> -->
-                <legend class="text-center header">Contact us</legend>
+                <legend class="text-center contact-header">Contact us</legend>
 
                 <div
                   class="form-group d-flex justify-content-center placeholder-box"
@@ -726,5 +749,6 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>

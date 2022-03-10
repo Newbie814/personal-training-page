@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --primary-app-color: #0c2e58;
@@ -15,17 +16,12 @@
   padding: 0;
 }
 
-/* body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-} */
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
-#training {
+/* -------------------------------------------original navbar keep because you might go back-------------------------------------------------------- */
+/* #training {
   font-family: 'Dancing Script';
   color: white;
 }
@@ -72,7 +68,7 @@ ul.navbar-nav {
 .nav-link:hover {
   color: #bac9c9;
   font-size: 1.35rem;
-  /* border-top: 1px solid #b7cece; */
+  /* border-top: 1px solid #b7cece; 
 }
 
 .navbar-brand:hover {
@@ -80,11 +76,131 @@ ul.navbar-nav {
   cursor: pointer;
 }
 
+  */
+
+/* -------------------------------------------------------------new navbar section ------------------------------------------------------------------- */
+#training {
+  font-family: 'Dancing Script';
+  color: white;
+}
+
+#training:hover {
+  color: var(--secondary-app-color);
+}
+
+.last-name {
+  font-size: 3rem;
+  padding: 10px 0;
+}
+
+.last-name:hover {
+  color: var(--primary-red);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: rgb(27, 27, 27);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: var(--secondary-app-color);
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul a:hover {
+  color: var(--secondary-app-color);
+}
+
+ul li {
+  padding: 5px 20px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
 /* ------------------------hero section------------------------------------- */
 .hero-container {
   background-image: url('images/liam-dark.jpg');
+  background-color: #0c2e58;
+  background-position: center;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 .head-text {
@@ -171,6 +287,76 @@ a {
   box-shadow: 0.5px 4px 1px 1px #ffffff69;
 }
 
+/* --------------------------------------------media query  nav and hero ------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  .head-text {
+    padding-top: 60px;
+    padding-left: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+
+  .hero-container {
+    background-position: center;
+  }
+
+  .hero-subhead {
+    font-size: 1.8rem;
+    padding: 40px 0;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+  .last-name {
+    font-size: 1.8rem;
+    padding: 3px 0;
+  }
+
+  .hero-header {
+    font-size: 3rem;
+    line-height: 0.95;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .head-text {
+    padding-top: 80px;
+    padding-left: 20px;
+    font-family: 'Poppins';
+  }
+
+  .fitness {
+    line-height: 1.6;
+
+    font-weight: 700;
+  }
+  .nutrition {
+    font-weight: 700;
+  }
+
+  .hero-container {
+    background-position: center;
+  }
+
+  .hero-subhead {
+    font-size: 1.9rem;
+    padding: 60px 0;
+  }
+
+  .hero-header {
+    font-size: 3.3rem;
+
+    margin-top: 5px;
+  }
+}
+
 /* --------------------------------about section experiment---------------- */
 
 .icon {
@@ -190,14 +376,6 @@ a {
   color: #f73823;
 }
 
-/* .card-heading:hover,
-.card-subheading:hover,
-.card-text:hover,
-.about-card:hover {
-  color: var(--secondary-app-color);
-  background-color: var(--primary-app-color);
-} */
-
 .card-subheading {
   font-size: 1.5rem;
   font-weight: 600;
@@ -208,11 +386,6 @@ a {
   font-size: 1.1rem;
   padding-bottom: 22px;
 }
-
-/* .about-card:hover {
-  background-color: var(--primary-app-color);
-  border-radius: 10px;
-} */
 
 .card-heading {
   margin-bottom: 38px;
@@ -288,6 +461,12 @@ h3 {
   margin-top: 15px;
 }
 
+@media only screen and (max-width: 800px) {
+  .card-2 {
+    margin-top: 64px;
+  }
+}
+
 /* --------------------------------carousel-------------------------------------- */
 
 .carousel {
@@ -305,8 +484,8 @@ h3 {
 } */
 
 /* -------------------------------contact----------------------------------------- */
-.header {
-  color: var(--primary-red);
+.contact-header {
+  color: var(--secondary-app-color);
   font-size: 36px;
   padding: 48px;
   font-weight: 700;
@@ -315,7 +494,7 @@ h3 {
 
 .contact-container {
   padding-bottom: 84px;
-  background-color: var(--primary-app-color);
+  background-color: rgb(27, 27, 27);
   margin-right: auto;
   margin-left: 0;
 }
@@ -338,13 +517,13 @@ h3 {
 .submit {
   width: 250px;
   border-radius: 25px;
-  background-color: var(--primary-red);
+  background-color: var(--secondary-app-color);
   color: var(--primary-app-color);
   box-shadow: 1.5px 3px 1px 1px #ffffff3d;
 }
 
 .submit:hover {
-  background-color: #f73823;
+  background-color: #48eeee;
   color: #fff;
   cursor: pointer;
 }
