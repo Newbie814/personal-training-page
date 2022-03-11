@@ -731,3 +731,9 @@ h3 {
     margin-bottom: 34px;
   }
 }
+
+@media (max-width: 500px) {
+  .testimonial-container {
+    height: 120vh;
+  }
+}
