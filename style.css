@@ -81,7 +81,24 @@ ul.navbar-nav {
 /* -------------------------------------------------------------new navbar section ------------------------------------------------------------------- */
 /*  ======================= new possibly temporary logo ==================== */
 .logo {
-  height: 45px;
+  height: 60px;
+  position: absolute;
+  left: 2px;
+}
+
+@media only screen and (max-width: 350px) {
+  .logo {
+    height: 35px;
+    position: absolute;
+    left: 2px;
+  }
+}
+@media only screen and (max-width: 450px) and (min-width: 351px) {
+  .logo {
+    height: 40px;
+    position: absolute;
+    left: 2px;
+  }
 }
 /* ========================original logo of nav bar ======================== */
 #training {
