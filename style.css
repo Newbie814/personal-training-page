@@ -79,6 +79,11 @@ ul.navbar-nav {
   */
 
 /* -------------------------------------------------------------new navbar section ------------------------------------------------------------------- */
+/*  ======================= new possibly temporary logo ==================== */
+.logo {
+  height: 45px;
+}
+/* ========================original logo of nav bar ======================== */
 #training {
   font-family: 'Dancing Script';
   color: white;
@@ -103,12 +108,13 @@ header a {
 
 header {
   padding: 0 20px;
-  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 24);
   background: linear-gradient(
     153deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(12, 46, 88, 1) 40%,
-    rgba(149, 214, 214, 1) 100%
+    #020018 0%,
+    #040824 34%,
+    #0c2e58 66%,
+    #95d6d6 100%
   );
   height: 80px;
   display: flex;
@@ -587,11 +593,12 @@ h3 {
 
 .contact-container {
   padding-bottom: 84px;
-  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 24);
   background: linear-gradient(
     153deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(12, 46, 88, 1) 40%,
+    rgba(2, 0, 24, 1) 0%,
+    rgba(4, 8, 36, 1) 34%,
+    rgba(12, 46, 88, 1) 66%,
     rgba(149, 214, 214, 1) 100%
   );
   margin-right: auto;
