@@ -594,10 +594,7 @@ h3 {
 
 
 
-/* {
-  color: #f73823;
-} */
-*/
+
 
 /* -------------------------------contact----------------------------------------- */
 .contact-header {
@@ -609,7 +606,7 @@ h3 {
 }
 
 .contact-container {
-  padding-bottom: 84px;
+  padding-bottom: 24px;
   background: rgb(2, 0, 24);
   background: linear-gradient(
     153deg,
@@ -730,6 +727,55 @@ h3 {
   margin-bottom: 18px;
 }
 
+/* ================================footer ======================================= */
+.remote-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.facetime {
+  padding-right: 12px;
+}
+.duo {
+  padding-left: 12px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy-brand {
+  color: white;
+}
+
+.footer-address {
+  margin-left: 45px;
+  color: var(--secondary-app-color);
+}
+
+.footer-phone {
+  margin-right: 45px;
+  letter-spacing: 1.3px;
+  color: white;
+}
+
+.footer-phone,
+.footer-address {
+  font-size: 1.5rem;
+}
+
+.copy-brand {
+  margin-top: 100px;
+  text-align: center;
+}
+.footer-brand {
+  padding-top: 32px;
+}
+/* ===================================end footer =============================== */
+
 @keyframes grow {
   0% {
     transform: scaleX(0);
@@ -777,4 +823,53 @@ h3 {
   .testimonial-container {
     height: 120vh;
   }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-address {
+    padding-bottom: 24px;
+  }
+
+  .footer-address,
+  .footer-phone {
+    margin: 0;
+  }
+}
+
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* .head-text {
+    padding-top: 45px;
+  } */
+  .hero-subhead {
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+  .not-be {
+    padding: 0;
+
+    font-size: 2rem;
+  }
+  .contact-header {
+    padding: 15px 0;
+    color: var(--secondary-app-color);
+  }
+  .submit {
+    width: 50%;
+  }
+
+  .mobile-menu {
+    top: 45px;
+    right: -95px;
+  }
+
+  .mobile-home {
+    display: none;
+  }
+
+  /* .mobile-about {
+    color: rgba(2, 0, 36, 1);
+  } */
 }
