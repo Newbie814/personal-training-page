@@ -6,7 +6,7 @@
   --primary-app-color: #0c2e58;
   --secondary-app-color: #95d6d6;
   --standout-color: #ffcb00;
-  --primary-red: #ff6150;
+  --primary-red: #ff6a00;
   --secondary-orange: #f8aa4b;
 }
 
@@ -81,7 +81,7 @@ ul.navbar-nav {
 /* -------------------------------------------------------------new navbar section ------------------------------------------------------------------- */
 /*  ======================= new possibly temporary logo ==================== */
 .logo {
-  height: 60px;
+  height: 70px;
   position: absolute;
   left: 2px;
 }
@@ -257,7 +257,7 @@ ul li:hover {
 }
 
 .fitness {
-  color: var(--secondary-app-color);
+  color: var(--primary-red);
 }
 
 .nutrition {
@@ -267,7 +267,7 @@ ul li:hover {
 .improve {
   padding: 0 8px;
   font-family: 'Dancing Script';
-  color: var(--standout-color);
+  color: var(--secondary-app-color);
 }
 
 .not-be {
@@ -762,8 +762,7 @@ h3 {
   color: white;
 }
 
-.footer-phone,
-.footer-address {
+.footer-phone {
   font-size: 1.5rem;
 }
 
@@ -774,6 +773,20 @@ h3 {
 .footer-brand {
   padding-top: 32px;
 }
+
+.copy-container {
+  padding-top: 48px;
+}
+
+.address-container {
+  margin-left: 45px;
+  display: flex;
+  font-size: 1.5rem;
+}
+.footer-city {
+  margin-left: 22px;
+}
+
 /* ===================================end footer =============================== */
 
 @keyframes grow {
@@ -807,6 +820,15 @@ h3 {
   .progress-bar {
     margin-bottom: 15px;
   }
+
+  .address-container {
+    margin: 0;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 950px) {
@@ -816,6 +838,14 @@ h3 {
 
   .progress-bar {
     margin-bottom: 34px;
+  }
+
+  .address-container {
+    flex-direction: column;
+  }
+
+  .footer-city {
+    margin: 0;
   }
 }
 
