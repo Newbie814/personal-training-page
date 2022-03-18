@@ -36,6 +36,27 @@ const testimonials = [
       'https://res.cloudinary.com/dylvkdabj/image/upload/v1646514283/website%20pics%20family/wp2647127-space-wallpaper-hd_irkddn.jpg',
     text: 'Matt took interest in learning what would motivate us, and patiently works with each of us to make us believers in the power of exercising correctly!  We started getting in shape, me getting strong (for the first time in my life), Bunny getting off the couch, feeling good and wanting to run and exercise after a whole day at work (really!).',
   },
+  {
+    name: 'Mary Blanche Vehlewald',
+    position: 'Retired',
+    photo:
+      'https://res.cloudinary.com/dylvkdabj/image/upload/v1647580217/website%20pics%20family/mary-b_qhgjnr.png',
+    text: 'Matt trains a wide range of clients both in age and body type.  He has been my trainer since 2016 and I’m one of his older clients.  Maintaining as good a quality of life as I possibly can is my personal goal and Matt is helping me to achieve that.  I am very appreciative of the individual approach he takes to each person he works with and how he is continuously upgrading his knowledge in the Personal Training field.   Working with Matt has given me a renewed outlook toward exercise  (which was never one of my favorite things), and how important it is to set reasonable goals and persevere in order to attain them."',
+  },
+  {
+    name: 'Larry Lynch',
+    position: 'CEO',
+    photo:
+      'https://res.cloudinary.com/dylvkdabj/image/upload/v1647580213/website%20pics%20family/larry_kkus2f.jpg',
+    text: 'Personal training is not about how much weight you can lift, how much you can perspire or even just grunt.  It’s about holistic lifestyle.  I was lucky enough to discover Matt after suffering a serious spinal cord injury.  We worked on physical fitness in a very specific and disciplined way; we worked on nutrition planning and lifestyle changes like sleep and stress management.  Across the board it wasn’t just recovery, it was about renewal.  I may be biologically older today but with Matt’s help and guidance I’ve never felt and acted younger.”',
+  },
+  // {
+  //   name: '',
+  //   position: '',
+  //   photo:
+  //     '',
+  //   text: '',
+  // },
 ];
 
 let idx = 1;
