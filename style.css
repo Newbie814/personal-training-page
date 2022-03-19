@@ -535,7 +535,9 @@ h3 {
 /* ----------------------------section services---------------------------------- */
 .services-header {
   color: var(--primary-app-color);
-  font-family: 'Dancing Script';
+  /* font-family: 'Secular One', sans-serif; */
+  border: 2px solid var(--secondary-app-color);
+  
   font-size: 3rem;
   letter-spacing: 3px;
 }
