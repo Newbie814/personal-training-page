@@ -536,9 +536,9 @@ h3 {
 .services-header {
   color: var(--primary-app-color);
   /* font-family: 'Secular One', sans-serif; */
-  border: 2px solid var(--secondary-app-color);
   
-  font-size: 3rem;
+  
+  font-size: 2.5rem;
   letter-spacing: 3px;
 }
 .services {
