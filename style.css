@@ -648,6 +648,63 @@ h3 {
   cursor: pointer;
 }
 
+/* =================================================== submit success modal ====================================================================== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.671);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+/* toggle to open and close */
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: #DFF2BF;
+  border-radius: 10px;
+  width: 30vw;
+  height: 10vh;
+  
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: #4F8A10
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  color: var(--clr-red-light);
+  transform: scale(1.3);
+}
+
+.modal-font {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+/* ===================================================== end modal =============================================================================== */
+
 /* ------------------------testimonial test--------------------------------- */
 
 .testimonial-container {

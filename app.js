@@ -7,6 +7,22 @@ const userImage = document.querySelector('.user-image');
 const username = document.querySelector('.user-name');
 const role = document.querySelector('.role');
 
+// =================================== modal constants ==========================================================================
+
+const modalBtn = document.querySelector('.form-button');
+const modal = document.querySelector('.modal-overlay');
+const closeBtn = document.querySelector('.close-btn');
+
+//  ========================================modal functions ======================================================================
+
+modalBtn.addEventListener('click', function () {
+  modal.classList.add('open-modal');
+});
+
+closeBtn.addEventListener('click', function () {
+  modal.classList.remove('open-modal');
+});
+
 const testimonials = [
   {
     name: 'Dr. Yvelle',
