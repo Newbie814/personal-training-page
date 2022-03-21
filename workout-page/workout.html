@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Project Name</title>
+  </head>
+  <body>
+    <header>
+      <div id="brand" class="last-name">
+        <!-- <a href="#"><span class="last-name">Woodard </span> <span id="training">Training</span></a> -->
+        <img
+          src="https://res.cloudinary.com/dylvkdabj/image/upload/v1647407719/website%20pics%20family/logo-tight-blue-removebg_gvqaqf.png"
+          alt="Woodard Training"
+          class="logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <!-- <li><a href="#about-me">About</a></li>
+          <li><a href="#services-link">Services</a></li>
+          <li><a href="#contact-link">Contact</a></li> -->
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li class="mobile-home"><a href="#">Home</a></li>
+          <li><a href="#about-me" class="mobile-about">About</a></li>
+          <li><a href="#services-link">Services</a></li>
+          <li><a href="#contact-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="exercise-container">
+      <section class="exercises-categories">
+        <div class="exercise-category">Movement Category</div>
+        <div class="exercise">Excercise</div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value">RPE Target</div>
+        <div id="exercise-left-in-tank" class="tank tank-head">
+          Left In Tank
+        </div>
+      </section>
+
+      <section class="push-exercises categories">
+        <div class="exercise-category">Push Movement</div>
+        <div class="exercise" id="push-selection"></div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value" id="push-difficulty"></div>
+        <div id="exercise-left-in-tank-push" class="tank"></div>
+      </section>
+
+      <section class="hinge-exercises categories">
+        <div class="exercise-category">Hinge Movement</div>
+        <div class="exercise" id="hinge-selection"></div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value" id="hinge-difficulty"></div>
+        <div id="exercise-left-in-tank-hinge" class="tank"></div>
+      </section>
+
+      <section class="pull-exercises categories">
+        <div class="exercise-category">Pull Movement</div>
+        <div class="exercise" id="pull-selection"></div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value" id="pull-difficulty"></div>
+        <div id="exercise-left-in-tank-pull" class="tank"></div>
+      </section>
+
+      <section class="squat-exercises categories">
+        <div class="exercise-category">Squat Movement</div>
+        <div class="exercise" id="squat-selection"></div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value" id="squat-difficulty"></div>
+        <div id="exercise-left-in-tank-squat" class="tank"></div>
+      </section>
+
+      <section class="core-exercises categories">
+        <div class="exercise-category">Core Movement</div>
+        <div class="exercise" id="core-selection"></div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value" id="core-difficulty"></div>
+        <div id="exercise-left-in-tank-core" class="tank"></div>
+      </section>
+      <!-- 
+      <section class="intervals-exercises categories">
+        <div class="exercise-category">Optional Intervals</div>
+        <div class="exercise" id="squat-selection"></div>
+        <div class="exercise-rpe">RPE</div>
+        <div class="exercise-rpe-value" id="intervals-difficulty"></div>
+      </section> -->
+    </div>
+  </body>
+</html>
