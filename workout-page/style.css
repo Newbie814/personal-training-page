@@ -207,7 +207,7 @@ ul li:hover {
   transition: 0.3s;
 }
 
-#hamburger-icon {
+/* #hamburger-icon {
   margin: auto 0;
   display: none;
   cursor: pointer;
@@ -254,7 +254,7 @@ ul li:hover {
 
 .mobile-menu li {
   margin-bottom: 2px;
-}
+} */
 @media only screen and (max-width: 600px) {
   header nav {
     display: none;
@@ -277,9 +277,9 @@ ul li:hover {
     padding: 40px 0;
   }
 
-  #hamburger-icon {
+  /* #hamburger-icon {
     display: block;
-  }
+  } */
 
   .last-name {
     font-size: 1.7rem;
