@@ -7,7 +7,7 @@
 
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Project Name</title>
+    <title>Workout Generator</title>
   </head>
   <body>
     <header>
@@ -22,11 +22,17 @@
       <nav>
         <ul>
           <li>
-            <a href="https://newbie814.github.io/personal-training-page/"
+            <a href="/"
               >Home</a
             >
           </li>
-          <!-- <li><a href="#about-me">About</a></li>
+          <li>
+            <a href="instructions\workout-inst.html"
+              >Instructions</a
+            >
+           
+          </li>
+           <!-- <li><a href="#about-me">About</a></li>
           <li><a href="#services-link">Services</a></li>
           <li><a href="#contact-link">Contact</a></li> -->
         </ul>
@@ -48,19 +54,29 @@
       </div> -->
     </header>
 
+    <section class="matters-container">
+      <h1 class="matters-headline">So, What Really Matters?</h1>
+      <h3 class="matters-subhead">how to decide what to focus on.</h3>
+      <div class="btn-container">
+        <button class="btn-instructions" ><a class='inst-btn' href="instructions\workout-inst.html">Instructions</a></button>
+      </div>
+     
+        
+    </section>
+
     <div class="exercise-container">
       <section class="exercises-categories">
-        <div class="exercise-category">Movement Category</div>
-        <div class="exercise">Excercise</div>
-        <div class="exercise-rpe">RPE</div>
-        <div class="exercise-rpe-value">RPE Target</div>
+        <div class="ex-heading exercise-category">Movement Category</div>
+        <div class="ex-heading exercise">Excercise</div>
+        <div class="ex-heading exercise-rpe">RPE</div>
+        <div class="ex-heading exercise-rpe-value">RPE Target</div>
         <div id="exercise-left-in-tank" class="tank tank-head">
           Left In Tank
         </div>
       </section>
 
       <section class="push-exercises categories">
-        <div class="exercise-category">Push Movement</div>
+        <div class="exercise-category">Push</div>
         <div class="exercise" id="push-selection"></div>
         <div class="exercise-rpe">RPE</div>
         <div class="exercise-rpe-value" id="push-difficulty"></div>
@@ -68,7 +84,7 @@
       </section>
 
       <section class="hinge-exercises categories">
-        <div class="exercise-category">Hinge Movement</div>
+        <div class="exercise-category">Hinge</div>
         <div class="exercise" id="hinge-selection"></div>
         <div class="exercise-rpe">RPE</div>
         <div class="exercise-rpe-value" id="hinge-difficulty"></div>
@@ -76,7 +92,7 @@
       </section>
 
       <section class="pull-exercises categories">
-        <div class="exercise-category">Pull Movement</div>
+        <div class="exercise-category">Pull</div>
         <div class="exercise" id="pull-selection"></div>
         <div class="exercise-rpe">RPE</div>
         <div class="exercise-rpe-value" id="pull-difficulty"></div>
@@ -84,7 +100,7 @@
       </section>
 
       <section class="squat-exercises categories">
-        <div class="exercise-category">Squat Movement</div>
+        <div class="exercise-category">Squat</div>
         <div class="exercise" id="squat-selection"></div>
         <div class="exercise-rpe">RPE</div>
         <div class="exercise-rpe-value" id="squat-difficulty"></div>

@@ -535,9 +535,7 @@ h3 {
 /* ----------------------------section services---------------------------------- */
 .services-header {
   color: var(--primary-app-color);
-  /* font-family: 'Secular One', sans-serif; */
-  
-  
+
   font-size: 2.5rem;
   letter-spacing: 3px;
 }
@@ -545,6 +543,14 @@ h3 {
   width: 70%;
   margin: 200px auto;
   /* background-color: var(--primary-app-color); */
+}
+
+.card {
+  border: none;
+}
+
+.col-lg-6 {
+  margin: 0 auto 24px;
 }
 
 .card-3,
@@ -562,6 +568,7 @@ h3 {
 .service-cards {
   margin-bottom: 28px;
   cursor: pointer;
+  max-width: 600px;
 }
 
 .service-card-text {
@@ -671,17 +678,17 @@ h3 {
   z-index: 10;
 }
 .modal-container {
-  background: #DFF2BF;
+  background: #dff2bf;
   border-radius: 10px;
   width: 30vw;
   height: 10vh;
-  
+
   max-width: var(--fixed-width);
   text-align: center;
   display: grid;
   place-items: center;
   position: relative;
-  color: #4F8A10
+  color: #4f8a10;
 }
 .close-btn {
   position: absolute;
@@ -703,7 +710,6 @@ h3 {
   font-size: 1rem;
   margin: 0;
 }
-
 
 /* ===================================================== end modal =============================================================================== */
 
