@@ -1,3 +1,5 @@
+const { urlencoded } = require('express');
+
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
@@ -16,6 +18,13 @@ const squatExerciseDifficulty = document.getElementById('squat-difficulty');
 
 const coreExerciseSelection = document.getElementById('core-selection');
 const coreExerciseDifficulty = document.getElementById('core-difficulty');
+
+const intervalsExerciseSelection = document.getElementById(
+  'intervals-selection'
+);
+const intervalsExerciseDifficulty = document.getElementById(
+  'intervals-difficulty'
+);
 
 const pushLeftIn = document.getElementById('exercise-left-in-tank-push');
 const hingeLeftIn = document.getElementById('exercise-left-in-tank-hinge');
@@ -322,17 +331,105 @@ var coreRpe = [
 
 var randomCore =
   coreExercises[Math.floor(Math.random() * coreExercises.length)];
-console.log(randomHinge);
+console.log(randomCore);
 
 var randomCoreRpe = coreRpe[Math.floor(Math.random() * coreExercises.length)];
-console.log(randomHingeRpe);
+console.log(randomCoreRpe);
 
 var coreLeftInTank = 10 - randomCoreRpe;
-console.log(hingeLeftInTank);
+console.log(coreLeftInTank);
 
 coreExerciseSelection.innerHTML = randomCore;
 coreExerciseDifficulty.innerHTML = randomCoreRpe;
 coreLeftIn.innerHTML = coreLeftInTank;
+
+// ========= exercise selection will be done via dropdown ===========
+// var intervalsExercises = [
+//   'V-Up',
+//   'Chop/Lift',
+//   'Side Lying Leg Raise',
+//   'Hanging Leg Raise',
+//   'Pushup Shoulder Taps',
+//   'Windshield Wipers',
+// ];
+
+// var intervalsExercises = [
+//   {
+//     work: ':15',
+//     rest: '1:45',
+//     timer: url(),
+//   },
+//   {
+//     work: ':30',
+//     rest: '1:00',
+//     timer: url(),
+//   },
+//   {
+//     work: '1:00',
+//     rest: '2:00',
+//     timer: url(),
+//   },
+//   {
+//     work: '1:30',
+//     rest: '1:30',
+//     timer: url(),
+//   },
+//   {
+//     work: '2:00',
+//     rest: '1:00',
+//     timer: url(),
+//   },
+// ];
+
+// var intervalsRpe = [
+//   '7',
+//   '7',
+//   '7',
+//   '7',
+//   '8',
+//   '6',
+//   '6',
+//   '6',
+//   '7',
+//   '7',
+//   '7',
+//   '7',
+//   '8',
+//   '6',
+//   '6',
+//   '6',
+//   '7',
+//   '7',
+//   '7',
+//   '7',
+//   '8',
+//   '6',
+//   '6',
+//   '6',
+
+//   '8',
+//   '6',
+//   '6',
+//   '6',
+//   '10',
+//   '9',
+//   '9',
+// ];
+
+// var randomIntervals =
+//   intervalsExercises[Math.floor(Math.random() * intervalsExercises.length)];
+// console.log(randomIntervals);
+
+// var randomIntervalsRpe =
+//   intervalsRpe[Math.floor(Math.random() * intervalsExercises.length)];
+// console.log(randomIntervalsRpe);
+
+// var intervalsLeftInTank = 10 - randomIntervalsRpe;
+// console.log(intervalsLeftInTank);
+
+// intervalsExerciseSelection.innerHTML = randomIntervals;
+// intervalsExerciseDifficulty.innerHTML = randomIntervalsRpe;
+// intervalsLeftIn.innerHTML = intervalsLeftInTank;
 
 //  =========================== may come back to obkect in future. right now,
 // array works the best
