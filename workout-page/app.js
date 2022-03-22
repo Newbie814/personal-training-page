@@ -1,5 +1,3 @@
-const { urlencoded } = require('express');
-
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
