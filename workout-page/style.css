@@ -256,9 +256,9 @@ ul li:hover {
   margin-bottom: 2px;
 } */
 @media only screen and (max-width: 600px) {
-  header nav {
+  /* header nav {
     display: none;
-  }
+  } */
 
   .head-text {
     padding-top: 60px;
@@ -414,9 +414,46 @@ ul li:hover {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .exercises-categories {
     display: none;
+  }
+
+  .btn-container {
+    width: 20vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .btn-instructions {
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-container {
+    width: 40vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .btn-instructions {
+    width: 40vw;
+  }
+
+  .exercise-category,
+  .exercise,
+  .exercise-rpe-value,
+  #exercise-left-in-tank-push,
+  #exercise-left-in-tank-pull,
+  #exercise-left-in-tank-hinge,
+  #exercise-left-in-tank-squat,
+  #exercise-left-in-tank-core {
+    width: 100%;
+  }
+
+  #exercise-left-in-tank-core {
+    margin-bottom: 4rem;
   }
 }
 
