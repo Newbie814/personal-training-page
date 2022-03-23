@@ -448,7 +448,8 @@ ul li:hover {
   #exercise-left-in-tank-pull,
   #exercise-left-in-tank-hinge,
   #exercise-left-in-tank-squat,
-  #exercise-left-in-tank-core {
+  #exercise-left-in-tank-core,
+  .exercise-rpe {
     width: 100%;
   }
 
