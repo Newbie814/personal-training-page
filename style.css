@@ -100,6 +100,12 @@ ul.navbar-nav {
     left: 2px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    height: 47px;
+  }
+}
 /* ========================original logo of nav bar ======================== */
 #training {
   font-family: 'Dancing Script';
