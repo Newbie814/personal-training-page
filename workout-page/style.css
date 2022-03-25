@@ -403,17 +403,31 @@ ul li:hover {
   margin-top: 2rem;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) and (orientation: landscape) {
+  header {
+    margin-bottom: 3rem;
+  }
+
   .exercise-container {
     flex-direction: column;
   }
-  .categories {
+  /* .categories {
     display: flex;
     flex-direction: column;
+  } */
+
+  /* .exercises-categories {
+    display: hidden;
+  } */
+
+  .btn-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
   }
 
-  .exercises-categories {
-    display: hidden;
+  .matters-container {
+    margin: 0 auto;
   }
 
   .exercise-category,
@@ -426,14 +440,26 @@ ul li:hover {
   #exercise-left-in-tank-hinge,
   #exercise-left-in-tank-core,
   .intervals-exercises {
-    width: 30vw;
+    /* width: 30vw; */
     text-align: center;
+  }
+
+  .categories {
+    margin-bottom: 0;
+  }
+
+  .core-exercises {
+    margin-bottom: 3rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .exercises-categories {
+  /* .exercises-categories {
     display: none;
+  } */
+
+  .intervals-exercises {
+    width: 100%;
   }
 
   .btn-container {
@@ -468,6 +494,15 @@ ul li:hover {
   #exercise-left-in-tank-core,
   .exercise-rpe {
     width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .exercise-rpe-value {
+    text-align: center;
+  }
+
+  .tank {
+    display: none;
   }
 
   #exercise-left-in-tank-core {
