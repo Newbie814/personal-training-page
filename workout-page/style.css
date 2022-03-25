@@ -362,7 +362,7 @@ ul li:hover {
 .intervals-exercises {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .exercise-category,
@@ -387,6 +387,22 @@ ul li:hover {
   color: var(--primary-app-color);
 }
 
+.core-exercises {
+  margin-bottom: 5rem;
+}
+
+#intervals-rest {
+  margin-bottom: 4rem;
+}
+
+.unchecked-hide {
+  display: none;
+}
+
+.intervals-heading {
+  margin-top: 2rem;
+}
+
 @media only screen and (max-width: 1100px) {
   .exercise-container {
     flex-direction: column;
@@ -408,7 +424,8 @@ ul li:hover {
   #exercise-left-in-tank-pull,
   #exercise-left-in-tank-squat,
   #exercise-left-in-tank-hinge,
-  #exercise-left-in-tank-core {
+  #exercise-left-in-tank-core,
+  .intervals-exercises {
     width: 30vw;
     text-align: center;
   }

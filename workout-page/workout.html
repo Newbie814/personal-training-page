@@ -56,8 +56,8 @@
     </header>
 
     <section class="matters-container">
-      <h1 class="matters-headline">So, What Really Matters?</h1>
-      <h3 class="matters-subhead">how to decide what to focus on.</h3>
+      <!-- <h1 class="matters-headline">So, What Really Matters?</h1>
+      <h3 class="matters-subhead">how to decide what to focus on.</h3> -->
       <div class="btn-container">
         <button class="btn-instructions" ><a class='inst-btn' href="instructions\workout-inst.html">Instructions</a></button>
       </div>
@@ -65,9 +65,9 @@
         
     </section>
 
-    <div class="exercise-container">
+    <div class="exercise-container ">
       <section class="exercises-categories">
-        <div class="ex-heading exercise-category">Movement Category</div>
+        <div class="ex-heading exercise-category ">Movement Category</div>
         <div class="ex-heading exercise">Excercise</div>
         <!-- <div class="ex-heading exercise-rpe">RPE</div> -->
         <div class="ex-heading exercise-rpe-value">RPE Target</div>
@@ -79,7 +79,7 @@
       <section class="push-exercises categories">
         <div class="exercise-category">Push</div>
         <div class="exercise" id="push-selection"></div>
-        <div class="exercise-rpe">RPE Target</div>
+        <!-- <div class="exercise-rpe">RPE Target</div> -->
         <div class="exercise-rpe-value" id="push-difficulty"></div>
         <div id="exercise-left-in-tank-push" class="tank"></div>
       </section>
@@ -87,7 +87,7 @@
       <section class="hinge-exercises categories">
         <div class="exercise-category">Hinge</div>
         <div class="exercise" id="hinge-selection"></div>
-        <div class="exercise-rpe">RPE Target</div>
+        <!-- <div class="exercise-rpe">RPE Target</div> -->
         <div class="exercise-rpe-value" id="hinge-difficulty"></div>
         <div id="exercise-left-in-tank-hinge" class="tank"></div>
       </section>
@@ -95,7 +95,7 @@
       <section class="pull-exercises categories">
         <div class="exercise-category">Pull</div>
         <div class="exercise" id="pull-selection"></div>
-        <div class="exercise-rpe">RPE Target</div>
+        <!-- <div class="exercise-rpe">RPE Target</div> -->
         <div class="exercise-rpe-value" id="pull-difficulty"></div>
         <div id="exercise-left-in-tank-pull" class="tank"></div>
       </section>
@@ -103,7 +103,7 @@
       <section class="squat-exercises categories">
         <div class="exercise-category">Squat</div>
         <div class="exercise" id="squat-selection"></div>
-        <div class="exercise-rpe">RPE Target</div>
+        <!-- <div class="exercise-rpe">RPE Target</div> -->
         <div class="exercise-rpe-value" id="squat-difficulty"></div>
         <div id="exercise-left-in-tank-squat" class="tank"></div>
       </section>
@@ -111,17 +111,36 @@
       <section class="core-exercises categories">
         <div class="exercise-category">Core Movement</div>
         <div class="exercise" id="core-selection"></div>
-        <div class="exercise-rpe">RPE Target</div>
+        <!-- <div class="exercise-rpe">RPE Target</div> -->
         <div class="exercise-rpe-value" id="core-difficulty"></div>
         <div id="exercise-left-in-tank-core" class="tank"></div>
       </section>
-      <!-- 
-      <section class="intervals-exercises categories">
+
+      <div>
+  <input type="checkbox" id="optional-intervals" name="intReveal" value="show" class="checkbox-hide"
+         >
+  <label for="optional-intervals" class="cb-hide">Click for optional intervals workout</label>
+</div>
+
+      
+    <div class="exercise-container intervals-heading">
+      <section class="exercises-categories unchecked-hide" id="hide-reveal">
+        <div class="ex-heading exercise-category">Movement Category</div>
+        <div class="ex-heading exercise">Excercise</div>
+        <!-- <div class="ex-heading exercise-rpe">RPE</div> -->
+        <div class="ex-heading exercise-rpe-value">Work</div>
+        <div id="intervals" class="tank tank-head">
+          Rest
+        </div>
+      </section>
+      
+
+      <section class="intervals-exercises categories unchecked-hide" id="reveal-hide">
         <div class="exercise-category">Optional Intervals</div>
-        <div class="exercise" id="intervals-selection"></div>
-        <div class="exercise-rpe">RPE</div>
-        <div class="exercise-rpe-value" id="intervals-difficulty"></div>
-      </section> -->
+        <div class="exercise-rpe">Cardio of choice</div>
+        <div class="exercise" id="intervals-work"></div>
+        <div class="exercise-rpe-value" id="intervals-rest"></div>
+      </section> 
     </div>
   </body>
 </html>

@@ -30,6 +30,19 @@ const pullLeftIn = document.getElementById('exercise-left-in-tank-pull');
 const squatLeftIn = document.getElementById('exercise-left-in-tank-squat');
 const coreLeftIn = document.getElementById('exercise-left-in-tank-core');
 
+const intervalsRest = document.getElementById('intervals-rest');
+const intervalsWork = document.getElementById('intervals-work');
+
+const revealIntervalWorkout = document.getElementById('optional-intervals');
+const hideReveal = document.getElementById('hide-reveal');
+const revealHide = document.getElementById('reveal-hide');
+
+revealIntervalWorkout.addEventListener('change', function () {
+  hideReveal.classList.toggle('unchecked-hide');
+  revealHide.classList.toggle('unchecked-hide');
+  intervalsRest.focus();
+});
+
 var pushExercises = [
   'Pushup',
   'Bench Press',
@@ -342,92 +355,81 @@ coreExerciseDifficulty.innerHTML = randomCoreRpe;
 coreLeftIn.innerHTML = coreLeftInTank;
 
 // ========= exercise selection will be done via dropdown ===========
-// var intervalsExercises = [
-//   'V-Up',
-//   'Chop/Lift',
-//   'Side Lying Leg Raise',
-//   'Hanging Leg Raise',
-//   'Pushup Shoulder Taps',
-//   'Windshield Wipers',
-// ];
+var intervalsExercises = ['Cardio of choice'];
 
-// var intervalsExercises = [
-//   {
-//     work: ':15',
-//     rest: '1:45',
-//     timer: url(),
-//   },
-//   {
-//     work: ':30',
-//     rest: '1:00',
-//     timer: url(),
-//   },
-//   {
-//     work: '1:00',
-//     rest: '2:00',
-//     timer: url(),
-//   },
-//   {
-//     work: '1:30',
-//     rest: '1:30',
-//     timer: url(),
-//   },
-//   {
-//     work: '2:00',
-//     rest: '1:00',
-//     timer: url(),
-//   },
-// ];
+var intervalsExercises = [
+  {
+    work: ':15',
+    rest: '1:45',
+    // timer: url(),
+  },
+  {
+    work: ':30',
+    rest: '1:00',
+    // timer: url(),
+  },
+  {
+    work: '1:00',
+    rest: '2:00',
+    // timer: url(),
+  },
+  {
+    work: '1:30',
+    rest: '1:30',
+    // timer: url(),
+  },
+  {
+    work: '2:00',
+    rest: '1:00',
+    // timer: url(),
+  },
+];
 
-// var intervalsRpe = [
-//   '7',
-//   '7',
-//   '7',
-//   '7',
-//   '8',
-//   '6',
-//   '6',
-//   '6',
-//   '7',
-//   '7',
-//   '7',
-//   '7',
-//   '8',
-//   '6',
-//   '6',
-//   '6',
-//   '7',
-//   '7',
-//   '7',
-//   '7',
-//   '8',
-//   '6',
-//   '6',
-//   '6',
+var intervalsRpe = [
+  '7',
+  '7',
+  '7',
+  '7',
+  '8',
+  '6',
+  '6',
+  '6',
+  '7',
+  '7',
+  '7',
+  '7',
+  '8',
+  '6',
+  '6',
+  '6',
+  '7',
+  '7',
+  '7',
+  '7',
+  '8',
+  '6',
+  '6',
+  '6',
 
-//   '8',
-//   '6',
-//   '6',
-//   '6',
-//   '10',
-//   '9',
-//   '9',
-// ];
+  '8',
+  '6',
+  '6',
+  '6',
+  '10',
+  '9',
+  '9',
+];
 
-// var randomIntervals =
-//   intervalsExercises[Math.floor(Math.random() * intervalsExercises.length)];
-// console.log(randomIntervals);
+var randomIntervals =
+  intervalsExercises[Math.floor(Math.random() * intervalsExercises.length)];
+console.log(randomIntervals);
 
-// var randomIntervalsRpe =
-//   intervalsRpe[Math.floor(Math.random() * intervalsExercises.length)];
-// console.log(randomIntervalsRpe);
+var randomIntervalsRpe =
+  intervalsRpe[Math.floor(Math.random() * intervalsExercises.length)];
+console.log(randomIntervalsRpe);
 
-// var intervalsLeftInTank = 10 - randomIntervalsRpe;
-// console.log(intervalsLeftInTank);
-
-// intervalsExerciseSelection.innerHTML = randomIntervals;
-// intervalsExerciseDifficulty.innerHTML = randomIntervalsRpe;
-// intervalsLeftIn.innerHTML = intervalsLeftInTank;
+intervalsWork.innerHTML = randomIntervals.work;
+intervalsRest.innerHTML = randomIntervals.rest;
 
 //  =========================== may come back to obkect in future. right now,
 // array works the best
