@@ -293,12 +293,84 @@ ul li:hover {
   }
 }
 /* ------------------------------exercise container  -------------------------- */
+
+/* =================== info accordion ========================= */
+
+.accordion-container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #fff;
+  color: var(--primary-app-color);
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  width: 90vw;
+
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: 1px 4px 4px 0.1px #95d6d681;
+}
+.acc-top,
+.acc-middle,
+.acc-btm {
+  margin-bottom: 24px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #95d6d61c;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.rpe {
+  color: var(--primary-red);
+}
+
+.accordion:after {
+  content: 'v';
+  font-size: 18px;
+  color: var(--primary-red);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2796'; /* Unicode character for "minus" sign (-) */
+}
+---------------------------- */ .text-experiment {
+  background-color: #090979;
+  background-image: linear-gradient(
+    90deg,
+    /* #020024 0%, */ #090979 35%,
+    #00d4ff 100%
+  );
+  background-size: 100%;
+  padding: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+/* =================== end accordion ========================= */
 .matters-container {
   margin-bottom: 5rem;
 }
 
 .btn-container {
-  width: 10vw;
+  width: 50vw;
   margin: 0 auto;
 }
 
@@ -311,7 +383,9 @@ ul li:hover {
   background-color: var(--primary-app-color);
   outline: none;
   color: var(--secondary-app-color);
-  margin: 20px auto;
+  margin: 20px auto 32px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   border: none;
   box-shadow: 0.5px 4px 1px 1px #ffffff3d;

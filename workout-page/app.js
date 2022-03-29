@@ -37,7 +37,23 @@ const revealIntervalWorkout = document.getElementById('optional-intervals');
 const hideReveal = document.getElementById('hide-reveal');
 const revealHide = document.getElementById('reveal-hide');
 
-revealIntervalWorkout.addEventListener('change', function () {
+// =============== accordion function ===============
+const acc = document.getElementsByClassName('accordion');
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}
+
+revealIntervalWorkout.addEventListener('change', function() {
   hideReveal.classList.toggle('unchecked-hide');
   revealHide.classList.toggle('unchecked-hide');
   intervalsRest.focus();
@@ -239,7 +255,6 @@ var hingeExercises = [
   'Leg Curl',
   'Single Leg Deadlift',
   'Single Leg Glute Bridge',
-  'Single Leg Squat',
 ];
 
 var hingeRpe = [
