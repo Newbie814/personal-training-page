@@ -114,17 +114,6 @@ p {
 }
 /*  global classes */
 
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
 /* --------------------------------project styling ---------------------------- */
 
 /* ======================== navbar ============================== */
@@ -339,7 +328,7 @@ ul li:hover {
 }
 
 .accordion:after {
-  content: 'v';
+  content: '+';
   font-size: 18px;
   color: var(--primary-red);
   float: right;
@@ -348,6 +337,11 @@ ul li:hover {
 
 .active:after {
   content: '\2796'; /* Unicode character for "minus" sign (-) */
+}
+
+.acc-intervals {
+  width: 70vw;
+  margin: 22px auto;
 }
 ---------------------------- */ .text-experiment {
   background-color: #090979;
@@ -475,6 +469,9 @@ ul li:hover {
 
 .intervals-heading {
   margin-top: 2rem;
+}
+#optional-intervals {
+  margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 1100px) and (orientation: landscape) {
