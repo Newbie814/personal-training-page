@@ -37,6 +37,9 @@ const revealIntervalWorkout = document.getElementById('optional-intervals');
 const hideReveal = document.getElementById('hide-reveal');
 const revealHide = document.getElementById('reveal-hide');
 
+const timerLink = document.getElementById('timer-link');
+const timerLinkMobile = document.getElementById('timer-link-mobile');
+
 // =============== accordion function ===============
 const acc = document.getElementsByClassName('accordion');
 var i;
@@ -370,33 +373,33 @@ coreExerciseDifficulty.innerHTML = randomCoreRpe;
 coreLeftIn.innerHTML = coreLeftInTank;
 
 // ========= exercise selection will be done via dropdown ===========
-var intervalsExercises = ['Cardio of choice'];
+// var intervalsExercises = ['Cardio of choice'];
 
 var intervalsExercises = [
   {
     work: ':15',
     rest: '1:45',
-    // timer: url(),
+    timer: 'https://www.intervaltimer.com/timers/11114565',
   },
   {
     work: ':30',
     rest: '1:00',
-    // timer: url(),
+    timer: 'https://www.intervaltimer.com/timers/11114568',
   },
   {
     work: '1:00',
     rest: '2:00',
-    // timer: url(),
+    timer: 'https://www.intervaltimer.com/timers/11114570',
   },
   {
     work: '1:30',
     rest: '1:30',
-    // timer: url(),
+    timer: 'https://www.intervaltimer.com/timers/11114572',
   },
   {
     work: '2:00',
     rest: '1:00',
-    // timer: url(),
+    timer: 'https://www.intervaltimer.com/timers/11114574',
   },
 ];
 
@@ -445,7 +448,8 @@ console.log(randomIntervalsRpe);
 
 intervalsWork.innerHTML = randomIntervals.work;
 intervalsRest.innerHTML = randomIntervals.rest;
-
+timerLink.setAttribute('href', randomIntervals.timer);
+timerLinkMobile.setAttribute('href', randomIntervals.timer);
 //  =========================== may come back to obkect in future. right now,
 // array works the best
 
