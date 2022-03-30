@@ -449,7 +449,7 @@ console.log(randomIntervalsRpe);
 intervalsWork.innerHTML = randomIntervals.work;
 intervalsRest.innerHTML = randomIntervals.rest;
 timerLink.setAttribute('href', randomIntervals.timer);
-timerLinkMobile.setAttribute('href', randomIntervals.timer);
+// timerLinkMobile.setAttribute('href', randomIntervals.timer);
 //  =========================== may come back to obkect in future. right now,
 // array works the best
 

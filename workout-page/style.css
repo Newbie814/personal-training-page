@@ -474,6 +474,10 @@ ul li:hover {
   margin-bottom: 3rem;
 }
 
+#timer-link {
+  color: var(--primary-red);
+}
+
 @media only screen and (max-width: 1100px) and (orientation: landscape) {
   header {
     margin-bottom: 3rem;
@@ -482,14 +486,6 @@ ul li:hover {
   .exercise-container {
     flex-direction: column;
   }
-  /* .categories {
-    display: flex;
-    flex-direction: column;
-  } */
-
-  /* .exercises-categories {
-    display: hidden;
-  } */
 
   .btn-container {
     width: 100%;
