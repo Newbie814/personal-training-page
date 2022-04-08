@@ -59,7 +59,7 @@ for (i = 0; i < acc.length; i++) {
 revealIntervalWorkout.addEventListener('change', function() {
   hideReveal.classList.toggle('unchecked-hide');
   revealHide.classList.toggle('unchecked-hide');
-  intervalsRest.focus();
+  hideReveal.scrollIntoView({ behaviour: 'smooth' });
 });
 
 var pushExercises = [
@@ -449,6 +449,7 @@ console.log(randomIntervalsRpe);
 intervalsWork.innerHTML = randomIntervals.work;
 intervalsRest.innerHTML = randomIntervals.rest;
 timerLink.setAttribute('href', randomIntervals.timer);
+
 // timerLinkMobile.setAttribute('href', randomIntervals.timer);
 //  =========================== may come back to obkect in future. right now,
 // array works the best
