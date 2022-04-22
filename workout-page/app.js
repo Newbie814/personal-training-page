@@ -45,7 +45,7 @@ const acc = document.getElementsByClassName('accordion');
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function() {
+  acc[i].addEventListener('click', function () {
     this.classList.toggle('active');
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -56,7 +56,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-revealIntervalWorkout.addEventListener('change', function() {
+revealIntervalWorkout.addEventListener('change', function () {
   hideReveal.classList.toggle('unchecked-hide');
   revealHide.classList.toggle('unchecked-hide');
   hideReveal.scrollIntoView({ behaviour: 'smooth' });
@@ -118,9 +118,9 @@ console.log(randomPushRpe);
 var pushLeftInTank = 10 - randomPushRpe;
 console.log(pushLeftInTank);
 
-pushExerciseSelection.innerHTML = randomPush;
-pushExerciseDifficulty.innerHTML = randomPushRpe;
-pushLeftIn.innerHTML = pushLeftInTank;
+pushExerciseSelection.textContent = randomPush;
+pushExerciseDifficulty.textContent = randomPushRpe;
+pushLeftIn.textContent = pushLeftInTank;
 
 //  =============== squat/quad exercises ========================================
 
@@ -183,9 +183,9 @@ console.log(randomSquatRpe);
 var squatLeftInTank = 10 - randomSquatRpe;
 console.log(squatLeftInTank);
 
-squatExerciseSelection.innerHTML = randomSquat;
-squatExerciseDifficulty.innerHTML = randomSquatRpe;
-squatLeftIn.innerHTML = squatLeftInTank;
+squatExerciseSelection.textContent = randomSquat;
+squatExerciseDifficulty.textContent = randomSquatRpe;
+squatLeftIn.textContent = squatLeftInTank;
 
 //  ============================ pull/back exercises ============================
 
@@ -246,9 +246,9 @@ console.log(randomPullRpe);
 var pullLeftInTank = 10 - randomPullRpe;
 console.log(pullLeftInTank);
 
-pullExerciseSelection.innerHTML = randomPull;
-pullExerciseDifficulty.innerHTML = randomPullRpe;
-pullLeftIn.innerHTML = pullLeftInTank;
+pullExerciseSelection.textContent = randomPull;
+pullExerciseDifficulty.textContent = randomPullRpe;
+pullLeftIn.textContent = pullLeftInTank;
 
 //  ============= hinge/deadlift/booty exercises =============================
 
@@ -308,9 +308,9 @@ console.log(randomHingeRpe);
 var hingeLeftInTank = 10 - randomHingeRpe;
 console.log(hingeLeftInTank);
 
-hingeExerciseSelection.innerHTML = randomHinge;
-hingeExerciseDifficulty.innerHTML = randomHingeRpe;
-hingeLeftIn.innerHTML = hingeLeftInTank;
+hingeExerciseSelection.textContent = randomHinge;
+hingeExerciseDifficulty.textContent = randomHingeRpe;
+hingeLeftIn.textContent = hingeLeftInTank;
 
 //  ========================================= core exercises ====================================================================================
 
@@ -368,9 +368,9 @@ console.log(randomCoreRpe);
 var coreLeftInTank = 10 - randomCoreRpe;
 console.log(coreLeftInTank);
 
-coreExerciseSelection.innerHTML = randomCore;
-coreExerciseDifficulty.innerHTML = randomCoreRpe;
-coreLeftIn.innerHTML = coreLeftInTank;
+coreExerciseSelection.textContent = randomCore;
+coreExerciseDifficulty.textContent = randomCoreRpe;
+coreLeftIn.textContent = coreLeftInTank;
 
 // ========= exercise selection will be done via dropdown ===========
 // var intervalsExercises = ['Cardio of choice'];
@@ -446,8 +446,8 @@ var randomIntervalsRpe =
   intervalsRpe[Math.floor(Math.random() * intervalsExercises.length)];
 console.log(randomIntervalsRpe);
 
-intervalsWork.innerHTML = randomIntervals.work;
-intervalsRest.innerHTML = randomIntervals.rest;
+intervalsWork.textContent = randomIntervals.work;
+intervalsRest.textContent = randomIntervals.rest;
 timerLink.setAttribute('href', randomIntervals.timer);
 
 // timerLinkMobile.setAttribute('href', randomIntervals.timer);
